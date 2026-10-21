@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 3 - XII PPLG 1</title>
+    <!-- Jalur Utama: Memuat Tailwind CSS melalui internet -->
+    <script src="https://tailwindcss.com"></script>
+    
+    <!-- Jalur Cadangan (Offline) & Perbaikan Tampilan -->
+    <style>
+        body { background-color: #eef7f9; color: #1e293b; font-family: 'Segoe UI', system-ui, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 2rem 1rem; box-sizing: border-box; }
+        .w-full { width: 100%; }
+        .max-w-\[600px\] { max-width: 600px; }
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .items-center { align-items: center; }
+        .justify-between { justify-content: space-between; }
+        .gap-3 { gap: 0.75rem; }
+        .gap-\[1\.25rem\] { gap: 1.25rem; }
+        .gap-2 { gap: 0.5rem; }
+        .mb-1 { margin-bottom: 0.25rem; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .text-\[11px\] { font-size: 11px; }
+        .text-xs { font-size: 12px; }
+        .text-sm { font-size: 14px; }
+        .text-lg { font-size: 1.25rem; }
+        .text-2xl { font-size: 1.75rem; }
+        .font-semibold { font-weight: 600; }
+        .font-bold { font-weight: 700; }
+        .font-medium { font-weight: 500; }
+        .tracking-wider { letter-spacing: 0.05em; }
+        .tracking-widest { letter-spacing: 0.1em; }
+        .uppercase { text-transform: uppercase; }
+        .text-\[\#0ea5e9\] { color: #0ea5e9; }
+        .text-\[\#0f172a\] { color: #0f172a; }
+        .text-\[\#64748b\] { color: #64748b; }
+        .text-\[\#334155\] { color: #334155; }
+        .text-\[\#94a3b8\] { color: #94a3b8; }
+        .bg-white { background-color: #ffffff; }
+        .bg-\[\#f8fafc\] { background-color: #f8fafc; }
+        .rounded-xl { border-radius: 12px; }
+        .rounded-2xl { border-radius: 16px; }
+        .rounded-full { border-radius: 9999px; }
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .py-3\.5 { padding-top: 0.875rem; padding-bottom: 0.875rem; }
+        .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+        .border { border-width: 1px; border-style: solid; }
+        .border-b { border-bottom-width: 1px; border-style: solid; }
+        .border-\[\#e2e8f0\] { border-color: #e2e8f0; }
+        .border-\[\#f1f5f9\] { border-color: #f1f5f9; }
+        .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+        .shadow-\[0_4px_20px_rgba\(0\(\,0\(\,0\(\,0\.02\)\)\] { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); }
+        .transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; }
+        .whitespace-nowrap { white-space: nowrap; }
+        
+        /* PENGATURAN UTAMA: Menghilangkan garis bawah tautan standar browser */
+        a { text-decoration: none !important; }
+        
+        /* Efek Interaksi Hover */
+        .hover\:-translate-y-0\.5:hover { transform: translateY(-0.125rem); }
+        .hover\:bg-\[\#0ea5e9\]:hover { background-color: #0ea5e9; }
+        .hover\:text-white:hover { color: #ffffff; }
+        .hover\:border-\[\#0ea5e9\]:hover { border-color: #0ea5e9; }
+        .hover\:shadow-\[0_4px_12px_rgba\(14\(\,165\(\,233\(\,0\.2\)\)\]:hover { box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2); }
+        .btn-member:hover span { color: #ffffff !important; }
+    </style>
+</head>
+<body class="bg-[#eef7f9] text-[#1e293b] min-h-screen flex justify-center items-center p-4 sm:p-8">
+
+    <!-- Pembungkus Utama Halaman -->
+    <div class="w-full max-w-[600px] flex flex-col">
+        
+        <!-- Header Atas Kecil -->
+        <div class="text-[11px] tracking-widest text-[#0ea5e9] uppercase font-bold mb-1">
+            HALAMAN DEPAN KELOMPOK
+        </div>
+        
+        <!-- Judul Utama -->
+        <h1 class="text-2xl font-bold text-[#0f172a] mb-6">
+            Daftar Anggota Kelompok
+        </h1>
+
+        <!-- Card Informasi Utama Kelompok -->
+        <div class="w-full bg-white rounded-2xl p-6 mb-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-[#e2e8f0] flex items-center gap-[1.25rem]">
+            <div class="w-[60px] h-[60px] rounded-full bg-[#0ea5e9]/10 border border-[#0ea5e9]/20 flex justify-center items-center text-2xl shrink-0">
+                👥
+            </div>
+            <div>
+                <h2 class="text-lg font-bold text-[#0f172a] mb-0.5">Kelompok 3</h2>
+                <p class="text-xs text-[#64748b] mb-2">Projek Web Perkenalan Resmi | Jurusan PPLG</p>
+                <span class="inline-block bg-[#0ea5e9]/10 text-[#0ea5e9] text-[11px] font-semibold px-3 py-1 rounded-full border border-[#0ea5e9]/20">
+                    XII PPLG 1
+                </span>
+            </div>
+        </div>
+
+        <!-- Card Daftar Tombol Anggota -->
+        <div class="w-full bg-white rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-[#e2e8f0]">
+            <div class="text-xs font-bold text-[#0f172a] uppercase tracking-wider mb-4 border-b border-[#f1f5f9] pb-3">
+                👤 Pilih Anggota Kelompok
+            </div>
+
+            <!-- List Menu Link Anggota (Garis bawah bersih & rapi) -->
+            <div class="flex flex-col gap-3">
+                <a href="syela.html" class="btn-member w-full flex justify-between items-center py-3.5 px-5 rounded-xl text-sm font-medium bg-[#f8fafc] text-[#334155] border border-[#e2e8f0] transition-all duration-300 hover:bg-[#0ea5e9] hover:text-white hover:border-[#0ea5e9] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(14,165,233,0.2)] shadow-sm">
+                    <span class="text-[#334155]">🌐 Profil Syela Marsya Ayuneta</span>
+                    <span class="text-[#94a3b8] whitespace-nowrap text-xs transition-colors duration-200">Lihat Detail →</span>
+                </a>
+                <a href="alvino.html" class="btn-member w-full flex justify-between items-center py-3.5 px-5 rounded-xl text-sm font-medium bg-[#f8fafc] text-[#334155] border border-[#e2e8f0] transition-all duration-300 hover:bg-[#0ea5e9] hover:text-white hover:border-[#0ea5e9] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(14,165,233,0.2)] shadow-sm">
+                    <span class="text-[#334155]">🌐 Profil Alvino Raissa Antariva</span>
+                    <span class="text-[#94a3b8] whitespace-nowrap text-xs transition-colors duration-200">Lihat Detail →</span>
+                </a>
+                <a href="jaditua.html" class="btn-member w-full flex justify-between items-center py-3.5 px-5 rounded-xl text-sm font-medium bg-[#f8fafc] text-[#334155] border border-[#e2e8f0] transition-all duration-300 hover:bg-[#0ea5e9] hover:text-white hover:border-[#0ea5e9] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(14,165,233,0.2)] shadow-sm">
+                    <span class="text-[#334155]">🌐 Profil Jaditua</span>
+                    <span class="text-[#94a3b8] whitespace-nowrap text-xs transition-colors duration-200">Lihat Detail →</span>
+                </a>
+                <a href="nezha.html" class="btn-member w-full flex justify-between items-center py-3.5 px-5 rounded-xl text-sm font-medium bg-[#f8fafc] text-[#334155] border border-[#e2e8f0] transition-all duration-300 hover:bg-[#0ea5e9] hover:text-white hover:border-[#0ea5e9] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(14,165,233,0.2)] shadow-sm">
+                    <span class="text-[#334155]">🌐 Profil Nezha Devawanti</span>
+                    <span class="text-[#94a3b8] whitespace-nowrap text-xs transition-colors duration-200">Lihat Detail →</span>
+                </a>
+                <a href="valeya.html" class="btn-member w-full flex justify-between items-center py-3.5 px-5 rounded-xl text-sm font-medium bg-[#f8fafc] text-[#334155] border border-[#e2e8f0] transition-all duration-300 hover:bg-[#0ea5e9] hover:text-white hover:border-[#0ea5e9] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(14,165,233,0.2)] shadow-sm">
+                    <span class="text-[#334155]">🌐 Profil Valerina Ecca Ramadhani</span>
+                    <span class="text-[#94a3b8] whitespace-nowrap text-xs transition-colors duration-200">Lihat Detail →</span>
+                </a>
+                <a href="dennis.html" class="btn-member w-full flex justify-between items-center py-3.5 px-5 rounded-xl text-sm font-medium bg-[#f8fafc] text-[#334155] border border-[#e2e8f0] transition-all duration-300 hover:bg-[#0ea5e9] hover:text-white hover:border-[#0ea5e9] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(14,165,233,0.2)] shadow-sm">
+                    <span class="text-[#334155]">🌐 Profil Dennis Natanael Haryono</span>
+                    <span class="text-[#94a3b8] whitespace-nowrap text-xs transition-colors duration-200">Lihat Detail →</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
